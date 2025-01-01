@@ -25,7 +25,7 @@ export default function BlogCard({
 
   const [clickOnThreeDots, setClickOnThreeDots] = React.useState(false);
   return (
-    <div className="flex flex-col bg-veryLightBlue border-2 border-veryLightPurple shadow-md rounded-lg p-4 break-inside-avoid" onClick={() => setClickOnThreeDots(false)}>
+    <div className="flex flex-col bg-veryLightBlue border-2 border-veryLightPurple shadow-md rounded-lg p-4 break-inside-avoid" onClick={() => {if(clickOnThreeDots) setClickOnThreeDots(false)}}>
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center gap-4">
           <div className="border-2 border-greenPink rounded-full p-1">
