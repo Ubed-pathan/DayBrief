@@ -22,7 +22,7 @@ export default function TopNav() {
       </div>
       <div
         className={`md:hidden fixed w-[70%] h-full top-14 mt-0.5 right-0 bg-veryLightPurple border-l-2 border-veryLightBlue shadow-lg transform transition-transform duration-500 ${isMenuOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          } z-20`}
       >
         <div className="flex flex-col items-center text-veryLightBlue">
           <ul className="flex flex-col gap-5 mt-4">

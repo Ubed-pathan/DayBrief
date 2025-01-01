@@ -33,10 +33,10 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <div className="md:flex">
-          <div className="hidden md:block">
+          <div className="hidden md:block fixed top-0 left-0 h-screen w-64">
           <SideNav/>
           </div>
-          <div>
+          <div className="ml-0 md:ml-64 flex-1">
           <TopNav/>
           </div>
           <main>

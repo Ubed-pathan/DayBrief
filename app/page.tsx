@@ -3,7 +3,7 @@ import avtar from "@/public/assets/avtar.png";
 
 export default function Home() {
   return (
-    <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,1fr))] auto-rows-min gap-4 p-4 min-h-screen">
+    <div className="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] auto-rows-auto gap-4 p-4 min-h-screen">
       <BlogCard
         avtar={avtar}
         title="Short Title"
