@@ -1,4 +1,4 @@
-import BlogCard from "./_component/BlogCard";
+import BlogCard from "../_component/BlogCard";
 import avtar from "@/public/assets/avtar.png";
 
 export default function Home() {
