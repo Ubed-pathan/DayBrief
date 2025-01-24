@@ -37,10 +37,10 @@ export default function RootLayout({
           <div className="hidden md:block fixed top-0 left-0 h-screen w-64">
           <SideNavWrapper />
           </div>
-          <div className="ml-0 md:ml-64 flex-1">
+          <div className="ml-0 md:ml-64 flex-1 w-full">
           <TopNav/>
           </div>
-          <main className="md:ml-64">
+          <main className="mt-16 md:mt-0 md:ml-64">
           {children}
           </main>
         </div>

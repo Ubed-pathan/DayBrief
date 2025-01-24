@@ -10,6 +10,7 @@ import image from "@/public/assets/avtar.png"
 import Link from "next/link"
 import { startTransition, useState } from "react"
 import {signup} from "@/app/api/actions/auth/signup";
+import Formimage01 from "@/public/assets/Formimage01.jpg"
 
 interface signUpFormDataType{
   username : string,
@@ -134,7 +135,7 @@ export function RegisterForm({
             </div>
           </form>
           <div className="relative hidden bg-muted md:block">
-            <Image src={image}
+            <Image src={Formimage01}
               alt="Welcome Image"
               className="absolute inset-0 h-full w-full object-center  dark:brightness-[0.2] dark:grayscale"
             />

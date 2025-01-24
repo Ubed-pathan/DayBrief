@@ -14,9 +14,29 @@ datasource db {
 }
 
 model User {
-  id       String @id @default(uuid())
-  username String @unique
-  email    String @unique
-  password String? 
-  createdAt DateTime @default(now())
+  id              String    @id @default(uuid())
+  username        String    @unique
+  email           String    @unique
+  password        String?
+  profileImageUrl String?
+  profileImageId  String?
+  secureImageUrl  String?
+  format          String?
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime? @updatedAt
+  blogs           Blog[]
+}
+
+model Blog {
+  id            String   @id @default(uuid())
+  title         String
+  description   String
+  imagePublicId String
+  imageUrl      String
+  secureUrl     String
+  format        String
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  userId        String 
+  user          User     @relation(fields: [userId], references: [id])
 }

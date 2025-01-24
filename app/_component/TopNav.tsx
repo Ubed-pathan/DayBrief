@@ -16,7 +16,7 @@ export default function TopNav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   return (
     <>
-      <div className='md:hidden flex justify-between items-center py-2 w-full bg-veryLightPurple text-darkBlue'>
+      <div className='md:hidden flex fixed top-0 left-0 justify-between items-center py-2 w-full bg-veryLightPurple text-darkBlue z-10'>
         <div className='flex gap-2 ml-2'>
           <Image src={logo} alt="logo" width={40} height={40} />
           <span className="text-veryDarkBlue font-bold mt-2 text-xl">DayBrief</span>

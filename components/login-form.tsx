@@ -10,6 +10,7 @@ import image from "@/public/assets/avtar.png"
 import Link from "next/link"
 import { signIn } from "next-auth/react"
 import { useState } from "react"
+import formimage02 from "@/public/assets/formimage02.jpeg"
 
 interface signInFormDataType {
   email: string,
@@ -121,7 +122,7 @@ export function LoginForm({
             </div>
           </form>
           <div className="relative hidden bg-muted md:block">
-            <Image src={image}
+            <Image src={formimage02}
               alt="Welcome Image"
               className="absolute inset-0 h-full w-full object-center dark:brightness-[0.2] dark:grayscale"
             />

@@ -7,9 +7,12 @@ import { TbFileLike } from "react-icons/tb";
 import { FiLogOut } from "react-icons/fi";
 import { auth } from "@/auth"
 import logo from '@/public/assets/logo03.png';
+import { signOut } from "next-auth/react";
+import LogoutButton from "./LogoutButtonForSideNav";
 
 export default async function SideNav() {
   const session = await auth();
+
   return (
     <>
       <div className="fiexed top-0 left-0 w-64 md:h-screen md:border-r-2 border-veryLightBlue text-veryLightPurple p-4">
@@ -45,7 +48,7 @@ export default async function SideNav() {
               <Link href="/profile" className="flex gap-4 group-hover:text-veryDarkBlue transform duration-500"><div className="w-9 h-9 border-[1px] border-veryLightPurple group-hover:border-veryDarkBlue transform duration-500  rounded-full flex justify-center items-center"><Image src={avtar} alt='avtar' width={30} height={30} /></div>Profile</Link>
             </li>
             <li className="p-3 group hover:bg-veryLightBlue w-full rounded-lg transform duration-500">
-              <Link href="/logout" className="flex gap-6 group-hover:text-veryDarkBlue transform duration-500"><FiLogOut size={25} className="flex justify-center items-center" />Logout</Link>
+              <LogoutButton />
             </li>
           </ul>
         </nav>
